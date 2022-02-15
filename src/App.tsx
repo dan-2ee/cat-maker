@@ -1,5 +1,5 @@
 import React from 'react';
-import MakeCat from "./components/MakeCat/index"
+import MakeCat from "./components";
 
 function App() {
   return <MakeCat />
