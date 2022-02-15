@@ -1,7 +1,7 @@
 import * as S from "./FavoritesStyle";
 import React from "react";
 
-const Favorites = ({favorites}:{favorites: any}) => {
+const Favorites = ({favorites}:{favorites: string[]}) => {
     // if (favorites.length === 0) {
     //     return (
     //         <S.EmptyList description={false}/>
@@ -9,7 +9,7 @@ const Favorites = ({favorites}:{favorites: any}) => {
     // }
     return (
         <S.FavoriteCatList>
-            {favorites.map((cat:any) =>
+            {favorites.map((cat:string) =>
                 <S.FavoriteCat src={cat}/>
             )}
         </S.FavoriteCatList>

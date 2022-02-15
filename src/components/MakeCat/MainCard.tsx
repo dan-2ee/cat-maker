@@ -10,7 +10,7 @@ const HeartSvg = () => (
 );
 const HeartIcon = (props: any) => <Icon component={HeartSvg} {...props} />;
 
-const MainCard = ({img, onHeartClick, alreadyFavorite}:{img: any, onHeartClick:any, alreadyFavorite:any}) => {
+const MainCard = ({img, onHeartClick}:{img: any, onHeartClick:any}) => {
     return (
         <S.ImageBox>
             <HeartIcon onClick={onHeartClick} style={{ color: 'hotpink', position: "absolute", marginTop: "30px" }} />
